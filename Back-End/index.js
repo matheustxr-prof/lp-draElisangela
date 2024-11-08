@@ -27,14 +27,14 @@ async function enviarEmailBackend(
       port: 587,
       secure: false,
       auth: {
-        user: "contatopets@petsmellon.com.br",
-        pass: "Patense2438"
+        user: "",
+        pass: ""
       },
     });
 
     let info = await transporter.sendMail({
-      from: "contatopets@petsmellon.com.br",
-      to: "matheustxr.profissional@gmail.com",
+      from: "",
+      to: "",
       subject: "Quero Ser Um Revendedor Zoomies",
       html: `<p>Nome: ${nome}</p>
                <p>Telefone: ${telefone}</p>
